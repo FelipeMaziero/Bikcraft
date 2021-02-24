@@ -1,40 +1,187 @@
-/* Estilos Gerais */
+/* ---------- ---------- Estilos Gerais (mudanças que serão para todo o site) ---------- ----------*/
 
-body{
+body {
   font-family: arial, Helvetica, sans-serif; /* Font geral do site*/
 }
 
-/* Header / a parte do Menu em cima */
+p {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 20px;
+}
 
-.header{
+.btn{ /* o botão de Orçamento*/
+  border: 3px solid #fec63e;;
+  padding: 10px 30px;
+  color: #fec63e;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+.btn:hover{
+  color: white;
+  border-color: white;
+}
+
+.btn.btn-preto:hover{
+  color: black;
+  border-color: black;
+}
+
+.subtitulo{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+
+}
+
+.subtitulo::after { /*linha depois do subtitulo Produto*/
+  
+  content: ""; 
+  display: block; 
+  width: 60px;
+  height: 3px;
+  background-color: black;
+  margin: 8px auto;
+}
+
+/*---------- ---------- Header / O Menu em cima ---------- ----------*/
+
+.header {
   position: fixed; /* para o conteudo não sumir quando descer a pagina, deixa-lo fixo*/
   top: 0;
   width: 100%; /* deixar o background 100% da pagina de ponta a ponta*/
   background: #fec63e;
   padding: 15px 0;
+  z-index: 10;/* quando tiver elemento sobre o outro na hora da rolagem e quiser que um sempre fica a cima de todos os outros */
 }
-.header_menu{
+.header_menu {
   text-align: right; /*todo conteudo dentro do menu vai para a direita*/
-  
 }
-.header_menu ul li{
+.header_menu ul li {
   display: inline-block; /* bloqueia a formatação do LI de quebra de linha de listas uma embaixo da outra*/
   margin-top: 20px;
   margin-left: 20px;
 }
 
-.header_menu ul li a{
+.header_menu ul li a {
   color: black;
   font-weight: bold; /*negrito*/
   text-transform: uppercase; /*tudo em letra maiuscula*/
-  letter-spacing: .1em; /*espaçamento de uma letra para outra*/
+  letter-spacing: 0.1em; /*espaçamento de uma letra para outra*/
   font-size: 14px;
   line-height: 20px;
   padding: 10px 0;
 }
 
-.header_menu ul li a:hover{ /* Quando passar o mouse em cima das palavras do menu irá mudar a cor*/
+.header_menu ul li a:hover {
+  /* Quando passar o mouse em cima das palavras do menu irá mudar a cor*/
   color: white;
 }
 
-/* Introdução */
+/* ---------- ---------- Introdução (o conteúdo a baixo do menu do topo) ---------- ----------*/
+
+.introducao {
+  width: 100%;
+  height: 380px;
+  background: url("../img/bg.jpg") no-repeat center; /*colocando a imagem no background da introdução e não repetir, A imagem só será mostrada uma vez*/
+  background-size: cover; /* Redimensione a imagem de fundo para cobrir todo o contêiner, mesmo que precise esticar a imagem ou cortar um pouco uma das bordas */
+  margin-top: 96px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.introducao h1 {
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.quote-externo {
+  /* citações de alguem, frases */
+  max-width: 320px;
+  margin: 0 auto; /* como foi colocado um width, colocaremos um margin 0 auto que funciona como um alinhamento ao centro desse conteúdo*/
+  color: white;
+  margin-bottom: 40px;
+}
+
+.quote-externo p {
+  /* especificando que somente o P (paragrafo) dessa citação vai ser alterado*/
+  font-style: italic;
+}
+
+.quote-externo p:before, .quote-externo p:after {
+  /*criando uma linha/bloco com o before(antes) e o after(depois) do P dentro do quote-externo, possibilitando assim a criação de uma linha a cima e a baixo dessa citação*/
+  content: ""; /* para isso classificamos como um conteudo sem nada escrito*/
+  display: block; /* colocamos ele como um formato de bloco e assim depois colocamos o tamanho dele e a cor*/
+  width: 60px;
+  height: 3px;
+  background-color: white;
+  margin: 14px auto 10px auto; /* alinhando no centro e separando a altura de cima e embaixo para não ficar proximo dos outros conteudo. CIMA/DIREITA/BAIXO/ESQUERDA*/
+
+}
+
+.quote-externo cite {
+  /* o Nome do autor que citou a frase*/
+  font-style: normal; /*a tag cite por padrão ja fica no formato italico e deixamos agora normal*/
+  font-weight: bold; /*deixando em negrito*/
+}
+
+/*---------- ---------- Produtos ---------- ----------*/
+
+.produtos{
+  padding: 60px 0;
+}
+
+.produtos_lista li{
+  background-color: #fec63e;
+  text-align: center;
+}
+
+.produtos_lista li h3{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-top: 20px;
+}
+
+.produtos_lista li h3:after{
+  content: ""; 
+  display: block; 
+  width: 60px;
+  height: 3px;
+  background-color: black;
+  margin: 2px auto;
+}
+
+.produtos_lista li p{
+  padding: 10px 20px 20px 20px;
+}
+
+.produtos_icone{
+  background-color: black;
+  padding: 20px;
+  
+}
+
+.call { /* Botão de produtos*/
+  padding-top: 40px;
+  text-align: center;
+  clear: both; /* para limpar o float*/
+}
+
+.call p{
+  margin-bottom: 20px;
+}
