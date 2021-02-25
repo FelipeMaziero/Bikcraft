@@ -1,2 +1,2 @@
 # HTML-CSS-JS
- Curso da ORIGAMID front-end de web completo com HTML/ CSS e Javascript em Desenvolvimento
+ Site em HTML/ CSS e Javascript em Desenvolvimento acompanhado pelo curso da Origamid
