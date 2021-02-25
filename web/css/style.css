@@ -10,44 +10,50 @@ p {
   line-height: 20px;
 }
 
-.btn{ /* o botão de Orçamento*/
-  border: 3px solid #fec63e;;
+img {
+  /* comportar as imagens como blocos*/
+  display: block;
+}
+
+.btn {
+  /* o botão de Orçamento*/
+  border: 3px solid #fec63e;
   padding: 10px 30px;
   color: #fec63e;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
-.btn:hover{
+.btn:hover {
   color: white;
   border-color: white;
 }
 
-.btn.btn-preto:hover{
+.btn.btn-preto:hover {
   color: black;
   border-color: black;
 }
 
-.subtitulo{
+.subtitulo {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   color: black;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 40px;
-  margin-top: 40px;
-
+  margin-top: 20px;
 }
 
-.subtitulo::after { /*linha depois do subtitulo Produto*/
-  
-  content: ""; 
-  display: block; 
+.subtitulo::after {
+  /*linha depois do subtitulo Produto*/
+
+  content: "";
+  display: block;
   width: 60px;
   height: 3px;
   background-color: black;
@@ -62,7 +68,7 @@ p {
   width: 100%; /* deixar o background 100% da pagina de ponta a ponta*/
   background: #fec63e;
   padding: 15px 0;
-  z-index: 10;/* quando tiver elemento sobre o outro na hora da rolagem e quiser que um sempre fica a cima de todos os outros */
+  z-index: 10; /* quando tiver elemento sobre o outro na hora da rolagem e quiser que um sempre fica a cima de todos os outros */
 }
 .header_menu {
   text-align: right; /*todo conteudo dentro do menu vai para a direita*/
@@ -95,7 +101,7 @@ p {
   height: 380px;
   background: url("../img/bg.jpg") no-repeat center; /*colocando a imagem no background da introdução e não repetir, A imagem só será mostrada uma vez*/
   background-size: cover; /* Redimensione a imagem de fundo para cobrir todo o contêiner, mesmo que precise esticar a imagem ou cortar um pouco uma das bordas */
-  margin-top: 96px;
+  margin-top: 92px;
   text-align: center;
   padding-top: 100px;
 }
@@ -120,7 +126,8 @@ p {
   font-style: italic;
 }
 
-.quote-externo p:before, .quote-externo p:after {
+.quote-externo p:before,
+.quote-externo p:after {
   /*criando uma linha/bloco com o before(antes) e o after(depois) do P dentro do quote-externo, possibilitando assim a criação de uma linha a cima e a baixo dessa citação*/
   content: ""; /* para isso classificamos como um conteudo sem nada escrito*/
   display: block; /* colocamos ele como um formato de bloco e assim depois colocamos o tamanho dele e a cor*/
@@ -128,7 +135,6 @@ p {
   height: 3px;
   background-color: white;
   margin: 14px auto 10px auto; /* alinhando no centro e separando a altura de cima e embaixo para não ficar proximo dos outros conteudo. CIMA/DIREITA/BAIXO/ESQUERDA*/
-
 }
 
 .quote-externo cite {
@@ -139,49 +145,201 @@ p {
 
 /*---------- ---------- Produtos ---------- ----------*/
 
-.produtos{
+.produtos {
   padding: 60px 0;
 }
 
-.produtos_lista li{
+.produtos_lista li {
   background-color: #fec63e;
   text-align: center;
 }
 
-.produtos_lista li h3{
+.produtos_lista li h3 {
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   margin-top: 20px;
 }
 
-.produtos_lista li h3:after{
-  content: ""; 
-  display: block; 
+.produtos_lista li h3:after {
+  content: "";
+  display: block;
   width: 60px;
   height: 3px;
   background-color: black;
   margin: 2px auto;
 }
 
-.produtos_lista li p{
+.produtos_lista li p {
   padding: 10px 20px 20px 20px;
 }
 
-.produtos_icone{
+.produtos_icone {
   background-color: black;
   padding: 20px;
-  
 }
 
-.call { /* Botão de produtos*/
+.call {
+  /* Botão de produtos*/
   padding-top: 40px;
   text-align: center;
   clear: both; /* para limpar o float*/
 }
 
-.call p{
+.call p {
   margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/*---------- ---------- Portfólio ---------- ----------*/
+
+.portfolio {
+  width: 100%;
+  background-color: black;
+  padding: 40px 0;
+}
+
+.portfolio .subtitulo {
+  color: #fec63e;
+}
+
+.portfolio .subtitulo:after {
+  background-color: #fec63e;
+}
+
+.portfolio_lista li:last-child {
+  /* Uma pseudoclass para especificar que somente o ultimo LI vai realizar a modificação*/
+  margin-top: 20px;
+}
+
+.portfolio .call p {
+  color: white;
+}
+
+/*---------- ---------- Qualidade ---------- ----------*/
+
+.qualidade {
+  padding: 60px 0;
+}
+
+.qualidade:after {
+  content: ""; /*mesmo que não tenha um conteudo, sempre tem que ter um content no after*/
+  width: 634px;
+  height: 83px;
+  display: block;
+  background: url("../img/linhas.svg") no-repeat center;
+  position: absolute; /* o position absolute serve para que o conteudo desse after fique somente dentro desse container que no caso é o Qualidade e assim qualquer mudança que faça ele se mover não irá sair dessa área*/
+
+  /*-- movendo para onde eu quero que ela fique-- */
+  top: 229px;
+  right: 162px;
+  z-index: -1; /*garantindo que esse elemento sempre fica atras de tudo*/
+}
+
+.qualidade_lista {
+  padding-top: 20px;
+}
+
+.qualidade img {
+  margin: 0 auto;
+}
+
+.qualidade_lista li {
+  text-align: center;
+  padding: 0 40px;
+}
+
+.qualidade_lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+
+.qualidade_lista li h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: black;
+  margin: 6px auto;
+}
+
+/*---------- ---------- Quebra ---------- ----------*/
+
+.quebra {
+  width: 100%;
+  height: 220px;
+  background: url("../img/bg-footer.jpg") no-repeat center; /*colocando a imagem no background e não repetir, A imagem só será mostrada uma vez*/
+  background-size: cover; /* Redimensione a imagem de fundo para cobrir todo o contêiner, mesmo que precise esticar a imagem ou cortar um pouco uma das bordas */
+  text-align: center;
+  padding-top: 40px;
+}
+
+.quebra .quote-externo {
+  max-width: 400px;
+}
+
+/*---------- ---------- Footer ---------- ----------*/
+
+.footer {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer h3 {
+  font-size: 18px;
+  line-height: 25px;
+  color: #fec63e;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.footer h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fec63e;
+  margin: 6px 0 12px 0;
+}
+
+.footer_historia {
+  padding-right: 40px;
+}
+
+.footer_contato ul li {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.footer_redes ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer_redes ul li a {
+  border: 3px solid #fec63e;
+  display: block;
+  padding: 10px;
+}
+
+.footer_redes ul li a:hover {
+  border-color: white;
+}
+
+/*---------- ---------- Footer ---------- ----------*/
+
+.direitos {
+  width: 100%;
+  background: #fec63e;
+  padding: 20px 0;
 }
