@@ -1,0 +1,184 @@
+/*---------- ---------- Imagem Introdução Produtos ---------- ----------*/
+.interna-produtos {
+  background: url("../img/bg-produtos.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/*---------- ---------- Produtos ---------- ----------*/
+.produto-item {
+  padding-top: 40px;
+}
+
+.produto-item h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  position: relative;
+  top: -180px;
+  text-align: center;
+  margin-bottom: -56px;
+}
+
+.produto-item h2:before,
+.produto-item h2:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: white;
+  margin: 6px auto 8px auto;
+}
+
+.produto-icone {
+  background-color: black;
+  padding: 70px 0;
+}
+
+.produto-icone img {
+  margin: 0 auto;
+}
+
+.produto-info {
+  background-color: black;
+}
+
+.produto-info p {
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+  height: 180px;
+  padding: 30px 40px;
+}
+
+.produto-info ul li {
+  background: #fec63e;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  float: left;
+  width: 229px;
+  height: 49px;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.produto-info ul li:nth-child(1),
+.produto-info ul li:nth-child(2) {
+  margin-bottom: 2px; /*só o 1 e segundo elemento filho*/
+}
+
+.produto-info ul li:nth-child(even) {
+  /* nth-chield seleciona elementos com base em suas posições em um grupo de elementos irmãos. -odd
+  Representa elementos cuja posição numérica em uma série de irmãos seja ímpar: 1, 3, 5, etc.
+  -even
+  Representa elementos cuja posição numérica em uma série de irmãos seja par: 2, 4, 6, etc. */
+  margin-left: 2px;
+}
+
+/*---------- ---------- Orçamento ---------- ----------*/
+
+.orcamento {
+  background-color: black;
+  width: 100%;
+  margin-top: 60px;
+  padding: 40px 0;
+}
+
+.orcamento h2 {
+  color: #fec63e;
+}
+
+.orcamento h2:after {
+  background-color: #fec63e;
+}
+
+.form {
+  padding-right: 60px;
+}
+
+.form label {
+  display: block;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  border: 4px solid #fec63e;
+  background: none;
+  color: white;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  outline: none; /* tirar o estilo quando você clica no input*/
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form textarea {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border: 4px solid #fec63e;
+  background: none;
+  color: white;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  outline: none; /* tirar o estilo quando você clica no input*/
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form button {
+  padding: 8px 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: none;
+}
+
+.orcamento-dados {
+  color: white;
+}
+
+.orcamento-dados h3 {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #fec63e;
+  font-weight: bold;
+}
+
+.orcamento-dados span {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.dados-email {
+  margin-bottom: 40px;
+}
+
+.orcamento-dados ul {
+  padding-right: 60px;
+}
+
+.orcamento-dados ul li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.orcamento-dados ul li:nth-child(odd) {
+  /* o conteudo dessa lista que estiverem na sequencia impar*/
+  background-color: #1d1d1d;
+}
+
+.orcamento-dados p {
+  margin: 8px 8px;
+}

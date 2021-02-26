@@ -49,7 +49,7 @@ img {
   margin-top: 20px;
 }
 
-.subtitulo::after {
+.subtitulo:after {
   /*linha depois do subtitulo Produto*/
 
   content: "";
@@ -58,6 +58,30 @@ img {
   height: 3px;
   background-color: black;
   margin: 8px auto;
+}
+
+/*---------- ---------- subtitulo-interno ---------- ----------*/
+
+.subtitulo-interno {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-top: 30px;
+}
+
+.subtitulo-interno:after {
+  /*linha depois do subtitulo Produto*/
+
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: black;
+  margin: 8px 0;
 }
 
 /*---------- ---------- Header / O Menu em cima ---------- ----------*/
@@ -91,6 +115,11 @@ img {
 
 .header_menu ul li a:hover {
   /* Quando passar o mouse em cima das palavras do menu irá mudar a cor*/
+  color: white;
+}
+
+.header_menu ul li a.menu_ativo {
+  /* saber em qual pagina ele esta*/
   color: white;
 }
 
@@ -141,6 +170,33 @@ img {
   /* o Nome do autor que citou a frase*/
   font-style: normal; /*a tag cite por padrão ja fica no formato italico e deixamos agora normal*/
   font-weight: bold; /*deixando em negrito*/
+}
+
+/*---------- ---------- Introdução Interna ---------- ----------*/
+
+.introducao-interna {
+  width: 100%;
+  margin-top: 92px;
+  height: 160px;
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+
+.introducao-interna h1 {
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.introducao-interna h1:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: white;
+  margin: 6px auto 10px auto;
 }
 
 /*---------- ---------- Produtos ---------- ----------*/
@@ -240,6 +296,7 @@ img {
 
 .qualidade_lista {
   padding-top: 20px;
+  overflow: auto; /* criar um clear dos elementos, fazer uma limpeza*/
 }
 
 .qualidade img {
@@ -336,7 +393,7 @@ img {
   border-color: white;
 }
 
-/*---------- ---------- Footer ---------- ----------*/
+/*---------- ---------- Direitos Reservados ---------- ----------*/
 
 .direitos {
   width: 100%;
