@@ -13,6 +13,7 @@ p {
 img {
   /* comportar as imagens como blocos*/
   display: block;
+  max-width: 100%;
 }
 
 .btn {
