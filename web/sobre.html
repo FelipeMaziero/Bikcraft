@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/sobre.css">
   <link rel="stylesheet" href="css/responsivo.css">
 
-  <link rel="stylesheet" href="js/javascript.js">
+  <script> document.documentElement.classList.add("js");</script>
 
 
 </head>
@@ -42,14 +42,14 @@
   <!---------- ---------- Introdução ---------- ---------->
   <section class="introducao-interna interna-sobre">
     <div class="container">
-      <h1>Sobre</h1>
-      <p>conheça mais sobre a bikcraft</p>
+      <h1 data-anime="400" class="fadeInDown">Sobre</h1>
+      <p data-anime="800" class="fadeInDown">conheça mais sobre a bikcraft</p>
     </div>
   </section>
   <!-- Fecha Introdução -->
 
   <!---------- ---------- Sobre ---------- ---------->
-  <section class="missao-valores container">
+  <section data-anime="1200" class="missao-valores container fadeInDown">
     <div class="grid-10">
       <h2 class="subtitulo-interno"> História, Missão e Visão</h2>
       <p>No mundo atual, a contínua expansão de nossa atividade cumpre um papel essencial na formulação da gestão inovadora da qual fazemos parte da qual fazemos parte.</p>
@@ -150,6 +150,8 @@
   </footer>
   <!-- Fecha Footer -->
 
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 
 
 </body>

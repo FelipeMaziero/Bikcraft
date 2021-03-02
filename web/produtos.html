@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/produtos.css">
   <link rel="stylesheet" href="css/responsivo.css">
 
-  <link rel="stylesheet" href="js/javascript.js">
+  <script> document.documentElement.classList.add("js");</script>
 
 
 </head>
@@ -42,14 +42,14 @@
   <!---------- ---------- Introdução ---------- ---------->
   <section class="introducao-interna interna-produtos">
     <div class="container">
-      <h1>Produtos</h1>
-      <p>conheça todos nossos produtos</p>
+      <h1 data-anime="400" class="fadeInDown">Produtos</h1>
+      <p data-anime="800" class="fadeInDown">conheça todos nossos produtos</p>
     </div>
   </section>
   <!-- Fecha Introdução -->
 
   <!---------- ---------- Produtos Bicicletas ---------- ---------->
-  <section class="container produto-item">
+  <section data-anime="1200" class="container produto-item fadeInDown">
     <div class="grid-11">
       <img src="img/produtos/bikcraft-passeio-1.jpg" alt="Bikcraft Passeio">
       <h2>Passeio</h2>
@@ -72,7 +72,7 @@
 
   </section>
 
-  <section class="container produto-item">
+  <section data-anime="1400" class="container produto-item fadeInDown">
     <div class="grid-11">
       <img src="img/produtos/bikcraft-esporte-1.jpg" alt="Bikcraft esporte">
       <h2>Esporte</h2>
@@ -210,7 +210,8 @@
   </footer>
   <!-- Fecha Footer -->
 
-
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 
 </body>
 

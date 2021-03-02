@@ -12,13 +12,15 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsivo.css">
 
+  <script> document.documentElement.classList.add("js");</script>
 
-  <link rel="stylesheet" href="js/javascript.js">
 
 
 </head>
 
 <body>
+  <script> document.documentElement.classList.add("js");</script>
+
 
   <!---------- ---------- Menu ---------- ---------->
   <header class="header">
@@ -42,19 +44,19 @@
   <!---------- ---------- Introdução ---------- ---------->
   <section class="introducao">
     <div class="container">
-      <h1>Bicicletas Feitas a Mão</h1>
-      <blockquote class="quote-externo">
+      <h1 data-anime="500" class="fadeInDown">Bicicletas Feitas a Mão</h1>
+      <blockquote data-anime="800" class=" fadeInDown quote-externo" >
         <p>“não tenha nada em sua casa que você não considere útil ou acredita ser bonito”</p>
         <cite>WILLIAM MORRIS</cite>
       </blockquote>
-      <a href="produtos.html" class="btn">Orçamento</a>
+      <a data-anime="1200" href="produtos.html" class="btn">Orçamento</a>
 
     </div>
   </section>
   <!-- Fecha Introdução -->
 
   <!---------- ---------- Produtos ---------- ---------->
-  <section class="produtos container">
+  <section data-anime="1400" class="produtos container fadeInDown">
     <h2 class="subtitulo">Produtos</h2>
     <ul class="produtos_lista">
       <li class="grid-1-3">
@@ -183,6 +185,9 @@
   </footer>
   <!-- Fecha Footer -->
 
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
+  
 
 
 </body>
