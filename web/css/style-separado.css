@@ -1,0 +1,483 @@
+/* ---------- ---------- Estilos Gerais (mudanças que serão para todo o site) ---------- ----------*/
+
+body {
+  font-family: arial, Helvetica, sans-serif; /* Font geral do site*/
+}
+
+p {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+img {
+  /* comportar as imagens como blocos*/
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  /* o botão de Orçamento*/
+  border: 3px solid #fec63e;
+  padding: 10px 30px;
+  color: #fec63e;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.btn:hover {
+  color: white;
+  border-color: white;
+}
+
+.btn.btn-preto:hover {
+  color: black;
+  border-color: black;
+}
+
+.subtitulo {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.subtitulo:after {
+  /*linha depois do subtitulo Produto*/
+
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: black;
+  margin: 8px auto;
+}
+
+/*---------- ---------- subtitulo-interno ---------- ----------*/
+
+.subtitulo-interno {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-top: 30px;
+}
+
+.subtitulo-interno:after {
+  /*linha depois do subtitulo Produto*/
+
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: black;
+  margin: 8px 0;
+}
+
+/*---------- ---------- Header / O Menu em cima ---------- ----------*/
+
+.header {
+  position: fixed; /* para o conteudo não sumir quando descer a pagina, deixa-lo fixo*/
+  top: 0;
+  width: 100%; /* deixar o background 100% da pagina de ponta a ponta*/
+  background: #fec63e;
+  padding: 15px 0;
+  z-index: 10; /* quando tiver elemento sobre o outro na hora da rolagem e quiser que um sempre fica a cima de todos os outros */
+}
+.header_menu {
+  text-align: right; /*todo conteudo dentro do menu vai para a direita*/
+}
+.header_menu ul li {
+  display: inline-block; /* bloqueia a formatação do LI de quebra de linha de listas uma embaixo da outra*/
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.header_menu ul li a {
+  color: black;
+  font-weight: bold; /*negrito*/
+  text-transform: uppercase; /*tudo em letra maiuscula*/
+  letter-spacing: 0.1em; /*espaçamento de uma letra para outra*/
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+.header_menu ul li a:hover {
+  /* Quando passar o mouse em cima das palavras do menu irá mudar a cor*/
+  color: white;
+}
+
+.header_menu ul li a.menu_ativo {
+  /* saber em qual pagina ele esta*/
+  color: white;
+}
+
+/* ---------- ---------- Introdução (o conteúdo a baixo do menu do topo) ---------- ----------*/
+
+.introducao {
+  width: 100%;
+  height: 380px;
+  background: url("../img/bg.jpg") no-repeat center; /*colocando a imagem no background da introdução e não repetir, A imagem só será mostrada uma vez*/
+  background-size: cover; /* Redimensione a imagem de fundo para cobrir todo o contêiner, mesmo que precise esticar a imagem ou cortar um pouco uma das bordas */
+  margin-top: 92px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.introducao h1 {
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.quote-externo {
+  /* citações de alguem, frases */
+  max-width: 320px;
+  margin: 0 auto; /* como foi colocado um width, colocaremos um margin 0 auto que funciona como um alinhamento ao centro desse conteúdo*/
+  color: white;
+  margin-bottom: 40px;
+}
+
+.quote-externo p {
+  /* especificando que somente o P (paragrafo) dessa citação vai ser alterado*/
+  font-style: italic;
+}
+
+.quote-externo p:before,
+.quote-externo p:after {
+  /*criando uma linha/bloco com o before(antes) e o after(depois) do P dentro do quote-externo, possibilitando assim a criação de uma linha a cima e a baixo dessa citação*/
+  content: ""; /* para isso classificamos como um conteudo sem nada escrito*/
+  display: block; /* colocamos ele como um formato de bloco e assim depois colocamos o tamanho dele e a cor*/
+  width: 60px;
+  height: 3px;
+  background-color: white;
+  margin: 14px auto 10px auto; /* alinhando no centro e separando a altura de cima e embaixo para não ficar proximo dos outros conteudo. CIMA/DIREITA/BAIXO/ESQUERDA*/
+}
+
+.quote-externo cite {
+  /* o Nome do autor que citou a frase*/
+  font-style: normal; /*a tag cite por padrão ja fica no formato italico e deixamos agora normal*/
+  font-weight: bold; /*deixando em negrito*/
+}
+
+/*---------- ---------- Introdução Interna ---------- ----------*/
+
+.introducao-interna {
+  width: 100%;
+  margin-top: 92px;
+  height: 160px;
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+
+.introducao-interna h1 {
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.introducao-interna h1:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: white;
+  margin: 6px auto 10px auto;
+}
+
+/*---------- ---------- Produtos ---------- ----------*/
+
+.produtos {
+  padding: 60px 0;
+}
+
+.produtos_lista li {
+  background-color: #fec63e;
+  text-align: center;
+}
+
+.produtos_lista img {
+  margin: 0 auto;
+}
+
+.produtos_lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+
+.produtos_lista li h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: black;
+  margin: 2px auto;
+}
+
+.produtos_lista li p {
+  padding: 10px 20px 20px 20px;
+}
+
+.produtos_icone {
+  background-color: black;
+  padding: 20px;
+}
+
+.call {
+  /* Botão de produtos*/
+  padding-top: 40px;
+  text-align: center;
+  clear: both; /* para limpar o float*/
+}
+
+.call p {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/*---------- ---------- Portfólio ---------- ----------*/
+
+.portfolio {
+  width: 100%;
+  background-color: black;
+  padding: 40px 0;
+}
+
+.portfolio .subtitulo {
+  color: #fec63e;
+}
+
+.portfolio .subtitulo:after {
+  background-color: #fec63e;
+}
+
+.portfolio_lista li:last-child {
+  /* Uma pseudoclass para especificar que somente o ultimo LI vai realizar a modificação*/
+  margin-top: 20px;
+}
+
+.portfolio .call p {
+  color: white;
+}
+
+/*---------- ---------- Qualidade ---------- ----------*/
+
+.qualidade {
+  padding: 60px 0;
+}
+
+.qualidade:after {
+  content: ""; /*mesmo que não tenha um conteudo, sempre tem que ter um content no after*/
+  width: 634px;
+  height: 83px;
+  display: block;
+  background: url("../img/linhas.svg") no-repeat center;
+  position: absolute; /* o position absolute serve para que o conteudo desse after fique somente dentro desse container que no caso é o Qualidade e assim qualquer mudança que faça ele se mover não irá sair dessa área*/
+
+  /*-- movendo para onde eu quero que ela fique-- */
+  top: 229px;
+  right: 162px;
+  z-index: -1; /*garantindo que esse elemento sempre fica atras de tudo*/
+}
+
+.qualidade_lista {
+  padding-top: 20px;
+  overflow: auto; /* criar um clear dos elementos, fazer uma limpeza*/
+}
+
+.qualidade img {
+  margin: 0 auto;
+}
+
+.qualidade_lista li {
+  text-align: center;
+  padding: 0 40px;
+}
+
+.qualidade_lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+
+.qualidade_lista li h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: black;
+  margin: 6px auto;
+}
+
+/*---------- ---------- Quebra ---------- ----------*/
+
+.quebra {
+  width: 100%;
+  height: 220px;
+  background: url("../img/bg-footer.jpg") no-repeat center; /*colocando a imagem no background e não repetir, A imagem só será mostrada uma vez*/
+  background-size: cover; /* Redimensione a imagem de fundo para cobrir todo o contêiner, mesmo que precise esticar a imagem ou cortar um pouco uma das bordas */
+  text-align: center;
+  padding-top: 40px;
+}
+
+.quebra .quote-externo {
+  max-width: 400px;
+}
+
+/*---------- ---------- Footer ---------- ----------*/
+
+.footer {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer h3 {
+  font-size: 18px;
+  line-height: 25px;
+  color: #fec63e;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.footer h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fec63e;
+  margin: 6px 0 12px 0;
+}
+
+.footer_historia {
+  padding-right: 40px;
+}
+
+.footer_contato ul li {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.footer_redes ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer_redes ul li a {
+  border: 3px solid #fec63e;
+  display: block;
+  padding: 10px;
+}
+
+.footer_redes ul li a:hover {
+  border-color: white;
+}
+
+/*---------- ---------- Direitos Reservados ---------- ----------*/
+
+.direitos {
+  width: 100%;
+  background: #fec63e;
+  padding: 20px 0;
+}
+
+/*---------- ---------- Javascript ---------- ----------*/
+
+/*---------- ---------- Pagina Portfolio ---------- ----------*/
+/* Slide quote*/
+
+.js [data-slide] {
+  /* todo o data slide*/
+  position: relative;
+}
+.js [data-slide] > * {
+  /* todo o conteudo que estiver dentro do data slide com o "*" */
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  /* Quando o item estiver ativo*/
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+  z-index: 1;
+}
+
+/* Slide nav imagens*/
+
+.js [data-slide-nav] {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.js [data-slide-nav] > button {
+  display: inline-block;
+  width: 12px;
+  margin: 4px;
+  height: 12px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  background: #1d1d1d;
+  text-indent: -100px;
+  overflow: hidden;
+}
+.js [data-slide-nav] > button.active {
+  background: #fec454;
+}
+
+/*---------- ---------- Pagina Index ---------- ----------*/
+
+.js [data-anime] {
+  opacity: 0;
+}
+
+.js .fadeInDown {
+  transform: translate3d(0,-20px,0);
+}
+
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: transform .8s, opacity .8s;
+}
+
+/*.js .fadeInDown {
+  transform: translate3d(0,-20px,0);
+}
+.js .fadeInUp {
+  transform: translate3d(0,20px,0);
+}
+.js .fadeInRight {
+  transform: translate3d(20px,0,0);
+}
+.js .fadeInLeft {
+  transform: translate3d(-20px,0,0);
+}*/
