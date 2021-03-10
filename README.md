@@ -1,2 +1,2 @@
-# Site basico em HTML-CSS-JS
- Projeto de um Site feito em HTML / CSS e Javascript. Criado e desenvolvido no curso da Origamid de web design completo.
+# Website simples em HTML-CSS-JS
+ Projeto de um website chamado Bikcraft que foi feito e desenvolvido a partir do treinamento da Origamid de Web Design Completo.
