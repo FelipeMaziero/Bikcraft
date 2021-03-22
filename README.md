@@ -1,2 +1,2 @@
-# Website simples em HTML-CSS-JS
- Projeto de um website chamado Bikcraft. Desenvolvimento feito a partir do treinamento da Origamid do curso Web Design Completo.
+# Website - Bikcraft
+Bikcraft é o resultado final do curso de Web design completo da Origamid. Um site introdutório e simples criado com HTML e CSS puro. 
